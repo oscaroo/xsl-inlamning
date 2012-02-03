@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="formel1-xslt.xsl" ?>
+
+<!-- Jag har gjort en XML-vokabulär om årets Formel 1 säsong(2011). Den innefattar de olika stallen, deras färger, antal titlar och förarna samt förarnas namn
+     och nationalitet.
+     Förklaringar till mina element:
+     <f1>           - Mitt rotelement som också är en förkortning av Formel 1,
+     <stall>        - Används för att gruppera de oilka stallen.
+     <namn>         - Finns för både namnet på stallet och namnen på förarna i stallen. Jag tyckte att det var de bästa alternativet för de två elementen.
+     <forare>       - Skall egentligen vara förare, men undviker å,ä,ö  i taggnamnen så därför blev det forare.
+     <nationalitet> - Anger vilken nationalitet Förarna har.
+     <stallfarger>  - Beskriver vilka färger varje stall har på sina bilar. 
+     <titel>        - VM-guld är en slags titel, därav namnet. Eftersom jag bara har VM-guld och inte någon mer valde jag titel i singularis.
+     Förklaring till mina attribut:
+     class="1"      - Finns på namn-taggen till stallnamnen och används för att skilja på namn-taggarna mellan stallen och förarna. Detta för att kunna 
+     göra cssen snyggare på ett lättare sätt. Attributnamnet class funderade jag på att ändra på men kom inte på något passande namn och tog därför 
+     klassikern 'class=""'.
+     antal=" "      - Finns på titel-taggen och attributvärdet  representerar det antal VM-titlar varje enskilt stall har.
+-->
+
+<motorsport>
+  <stall>
+    <namn class="1">Ferrari</namn>
+    <forare>
+      <namn>Fernando Alonso</namn>
+      <nationalitet>Spansk</nationalitet>
+    </forare>
+    <forare>
+      <namn>Felippe Massa</namn>
+      <nationalitet>Brasiliansk</nationalitet>
+    </forare>            
+    <stallfarger>Röd, vit</stallfarger>
+    <titlar>
+      <titel typ="Vm">16</titel>
+      <titel typ="Förar">15</titel>
+    </titlar>
+  </stall>
+  <stall>
+    <namn class="1">Red Bull Racing</namn>
+    <forare>
+      <namn>Sebastian Vettel</namn>
+      <nationalitet>Tysk</nationalitet>
+    </forare>
+    <forare>
+      <namn>Mark Webber</namn>
+      <nationalitet>Australiensisk</nationalitet>
+    </forare>
+    <stallfarger>Blå, röd, gul</stallfarger>
+    <titlar>
+      <titel typ="Vm">2</titel>
+      <titel typ="Förar">2</titel>
+    </titlar>    
+  </stall>
+  <stall>
+    <namn class="1">McLaren</namn>
+    <forare>
+      <namn>Lewis Hamilton</namn>
+      <nationalitet>Engelsk</nationalitet>
+    </forare>
+    <forare>
+      <namn>Jenson Button</namn>
+      <nationalitet>Engelsk</nationalitet>
+    </forare>            
+    <stallfarger>Silver, röd</stallfarger>
+    <titlar>
+      <titel typ="Vm">8</titel>
+      <titel typ="Förar">12</titel>
+    </titlar>    
+  </stall>
+  <stall>
+    <namn class="1">Mercedes</namn>
+    <forare>
+      <namn>Nico Rosberg</namn>
+      <nationalitet>Tysk</nationalitet>
+    </forare>
+    <forare>
+      <namn>Michael Schumacher</namn>
+      <nationalitet>Tysk</nationalitet>
+    </forare>            
+    <stallfarger>Silver, turkos</stallfarger>
+    <titlar>
+      <titel typ="Vm">1</titel>
+      <titel typ="Förar">2</titel>
+    </titlar>    
+  </stall>
+  <stall>
+    <namn class="1">Toro Rosso</namn>
+    <forare>
+      <namn>Sébastien Buemi</namn>
+      <nationalitet>Schweisisk</nationalitet>
+    </forare>
+    <forare>
+      <namn>Jamie Alguersuari</namn>
+      <nationalitet>Spansk</nationalitet>
+    </forare>            
+    <stallfarger>Blå, röd, gul</stallfarger>        
+    <titlar>
+      <titel typ="Vm">0</titel>
+      <titel typ="Förar">0</titel>
+    </titlar>    
+  </stall>
+  <stall>
+    <namn class="1">Force India</namn>
+    <forare>
+      <namn>Adrian Sutil</namn>
+      <nationalitet>Tysk</nationalitet>
+    </forare>
+    <forare>
+      <namn>Paul di Resta</namn>
+      <nationalitet>Engelsk</nationalitet>
+    </forare>            
+    <stallfarger>Vit, orange, grön</stallfarger>
+    <titlar>
+      <titel typ="Vm">0</titel>
+      <titel typ="Förar">0</titel>
+    </titlar>     
+  </stall>
+  <stall>
+    <namn class="1">Renault</namn>
+    <forare>
+      <namn>Vitalij Petrov</namn>
+      <nationalitet>Rysk</nationalitet>
+    </forare>
+    <forare>
+      <namn>Bruno Senna</namn>
+      <nationalitet>Brasiliansk</nationalitet>
+    </forare>            
+    <stallfarger>Svart, guld, röd</stallfarger>
+    <titlar>
+      <titel typ="Vm">2</titel>
+      <titel typ="Förar">2</titel>
+    </titlar>    
+  </stall>
+  <stall>
+    <namn class="1">Williams</namn>
+    <forare>
+      <namn>Rubens Barrichello</namn>
+      <nationalitet>Brasiliansk</nationalitet>
+    </forare>
+    <forare>
+      <namn>Pastor Maldonado</namn>
+      <nationalitet>Colombiansk</nationalitet>
+    </forare>            
+    <stallfarger>Blå, vit, svart</stallfarger>
+    <titlar>
+      <titel typ="Vm">9</titel>
+      <titel typ="Förar">7</titel>
+    </titlar>    
+  </stall>
+  <stall>
+    <namn class="1">Sauber</namn>
+    <forare>
+      <namn>Kamui Kobayashi</namn>
+      <nationalitet>Japansk</nationalitet>
+    </forare>
+    <forare>
+      <namn>Sergio Pérez</namn>
+      <nationalitet>Mexikansk</nationalitet>
+    </forare>            
+    <stallfarger>Vit, svart, röd</stallfarger>
+    <titlar>
+      <titel typ="Vm">0</titel>
+      <titel typ="Förar">0</titel>
+    </titlar>    
+  </stall>
+  <stall>
+    <namn class="1">Team Lotus</namn>
+    <forare>
+      <namn>Heikki Kovalainen</namn>
+      <nationalitet>Finsk</nationalitet>
+    </forare>
+    <forare>
+      <namn>Jarno Trulli</namn>
+      <nationalitet>Italiensk</nationalitet>
+    </forare>            
+    <stallfarger>Grön, gul</stallfarger>
+    <titlar>
+      <titel typ="Vm">7</titel>
+      <titel typ="Förar">6</titel>
+    </titlar>    
+  </stall>
+  <stall>
+    <namn class="1">Virgin</namn>
+    <forare>
+      <namn>Timo Glock</namn>
+      <nationalitet>Tysk</nationalitet>
+    </forare>
+    <forare>
+      <namn>Jérôme d'Ambrosio</namn>
+      <nationalitet>Belgisk</nationalitet>
+    </forare>            
+    <stallfarger>Svart, röd, vit</stallfarger>
+    <titlar>
+      <titel typ="Vm">0</titel>
+      <titel typ="Förar">0</titel>
+    </titlar>    
+  </stall>
+  <stall>
+    <namn class="1">HRT</namn>
+    <forare>
+      <namn>Daniel Ricciardo</namn>
+      <nationalitet>Australienisk</nationalitet>
+    </forare>
+    <forare>
+      <namn>Vitantonio Liuzzi</namn>
+      <nationalitet>Italiensk</nationalitet>
+    </forare>            
+    <stallfarger>Vit, svart, röd</stallfarger>
+    <titlar>
+      <titel typ="Vm">0</titel>
+      <titel typ="Förar">0</titel>
+    </titlar>    
+  </stall>
+</motorsport>
